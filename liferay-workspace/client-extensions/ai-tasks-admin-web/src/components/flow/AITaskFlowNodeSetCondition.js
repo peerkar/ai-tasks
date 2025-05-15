@@ -223,7 +223,7 @@ const AITaskFlowNodeSetCondition = () => {
             value={currentNode.condition?.contains?.value || ''}
             type="text"
             className="form-control"
-            onChange={handleValueChange}
+            onChange={handleConditionFieldChange}
           />
         </div>
       )}
@@ -237,7 +237,7 @@ const AITaskFlowNodeSetCondition = () => {
             value={currentNode.condition?.in?.value || ''}
             type="text"
             className="form-control"
-            onChange={handleValueChange}
+            onChange={handleConditionFieldChange}
           />
         </div>
       )}
