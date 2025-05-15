@@ -36,7 +36,7 @@ AI Tasks backend is built on [LangChain4J](https://docs.langchain4j.dev/) and su
 
 ### Example Use Cases
 * Create Liferay **chatbots**
-* Integrate Liferay chatbots to external or internal services with the help of [MCP](https://modelcontextprotocol.io/introduction)
+* Create multi-agent tasks operating with internal or external services with the help of [MCP](https://modelcontextprotocol.io/introduction)
 * Add AI **translation** capabilities to Liferay pages, display templates or applications
 * Add AI **summarization** capabilities to Liferay pages, display templates or applications
 * Add **image & content generation** capabilities to Liferay pages, display templates or applications
