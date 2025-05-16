@@ -4,9 +4,9 @@
 
 ## Table of Contents  
 - [About](#about)
-- [Features](#features)
 - [Quick Start](#quick-start)
 - [Samples](#samples)
+- [Features](#features)
 - [How To Use It](#how-to-use-it)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -23,6 +23,13 @@ AI Tasks is a tool for Liferay allowing to easily build and manage AI-assisted, 
 AI Tasks backend is built on [LangChain4J](https://docs.langchain4j.dev/) and supports the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) for creating standardized integrations to external and internal services. 
 
 ![AI Tasks admin](./images/ai-tasks-admin.png)
+
+## Quick Start
+
+See the quick start tutorial  [here](QUICKSTART.MD).
+
+## Samples
+Several sample AI Tasks are provided in the [samples](./samples) folder.
 
 ## Features
 
@@ -42,14 +49,6 @@ AI Tasks backend is built on [LangChain4J](https://docs.langchain4j.dev/) and su
 * Add **image & content generation** capabilities to Liferay pages, display templates or applications
 * Create **RAG chatbots** grounded to local Liferay semantic search or for example to Google Search
 * **Integrate Liferay OOTB workflows with AI**
-
-## Quick Start
-
-See the quick start tutorial  [here](QUICKSTART.MD).
-
-## Samples
-Several sample AI Tasks are provided in the [samples](./samples) folder.
-
 
 ## How To Use It
 
