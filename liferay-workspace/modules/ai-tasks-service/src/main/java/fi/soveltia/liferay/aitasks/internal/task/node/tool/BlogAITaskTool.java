@@ -49,13 +49,14 @@ public class BlogAITaskTool implements AITaskTool {
 			_jsonObject = jsonObject;
 		}
 
-		@Tool("Creates a new blogs entry")
+		@Tool(
+			"Use this tool only if you know content, subtitle and title and whether to create the cover image. Creates a new blogs entry with a cover image."
+		)
 		public BlogPosting createBlogsEntry(
-				@P("The content for the blogs entry") String content,
-				@P("Create a cover image for the blogs entry?") Boolean
-					createCoverImage,
-				@P("The subtitle for the blogs entry") String subtitle,
-				@P("The title for the blogs entry") String title)
+				@P("The content") String content,
+				@P("Create the cover image?") Boolean createCoverImage,
+				@P("The subtitle ") String subtitle,
+				@P("The title") String title)
 			throws Exception {
 
 			_validateParameters(content, subtitle, title);
