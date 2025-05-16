@@ -35,7 +35,7 @@ const RangeField = ({
             className={'form-control-range'}
             type={'range'}
             min={min ? min : '0'}
-            max={max ? max : '0'}
+            max={max ? max : '1'}
             step={step ? step : '0.1'}
             value={parameterValue}
             onChange={(e) => {
