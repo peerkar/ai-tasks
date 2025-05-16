@@ -1,6 +1,6 @@
 # Create Blogs With Images
 
-An AI Task creating a Blogs Entry with image.
+An AI Task creating blog entries with cover images.
 
 ![Create Blogs With Images](create-blogs-with-images-1.png "Create Blogs With Images")
 
@@ -8,14 +8,11 @@ An AI Task creating a Blogs Entry with image.
 
 ## Requirements
 
-* Vertex AI Gemini model access set up
 * OpenAI API key
 
 
 ## Installation
 
-1. Authenticate to Vertex AI with `gcloud auth login`
-1. Set up your GLCOUD_PROJECT_NAME environment 
 1. Set up your OPENAI_API_KEY environment variable
 1. Import the [AI Task](./create-blogs-with-images.json)
 1. Test in the chat preview

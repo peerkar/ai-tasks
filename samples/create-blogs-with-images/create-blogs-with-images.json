@@ -9,8 +9,8 @@
       {
         "uiConfiguration": {
           "position": {
-            "x": -117.61428833007814,
-            "y": -304.2476247151693
+            "x": -941.6142883300782,
+            "y": -592.9142913818359
           }
         },
         "id": "whiteModestSkunk",
@@ -21,25 +21,21 @@
       {
         "uiConfiguration": {
           "position": {
-            "x": 160.69659757757637,
-            "y": -335.18999285445216
+            "x": -645.0476498106218,
+            "y": -623.0399786129158
           }
         },
-        "id": "brownFox",
-        "label": "Gemini Chat Model",
-        "type": "geminiChatModel",
+        "id": "aquaAttractiveCarp",
+        "label": "OpenAI Chat Model",
+        "type": "openAIChatModel",
         "parameters": {
-          "topK": "3",
-          "systemMessage": "Your task is to create a blog entry for the topic given by the user. It should be not longer than 1000 characters long. Ask whether to create a cover image and only create it if asked.",
-          "memoryMaxMessages": 50,
-          "project": "env:GCLOUD_PROJECT_NAME",
-          "inputParameters": {
-            "text": {
-              "type": "text"
-            }
-          },
-          "topP": 1,
-          "maxOutputTokens": 1000,
+          "modelName": "gpt-4o-mini",
+          "baseUrl": "https://api.openai.com/v1/",
+          "systemMessage": "You are a blog writing assistant and your task is to add blog entries to the system using the tool provided. Ask the user for the topic and then figure out the  title, subtitle and content by yourself. Always create the cover image. Only use the tool once all the fields are known. The content should be formatted in HTML and should not be longer than 3000 characters long.",
+          "apiKey": "env:OPENAI_API_KEY",
+          "memoryMaxMessages": 20,
+          "temperature": 0.7,
+          "useChatMemory": true,
           "tools": {
             "blog": {
               "imageGenerator": {
@@ -51,26 +47,22 @@
               }
             }
           },
-          "outputParameterName": "text",
-          "modelName": "gemini-1.5-pro",
-          "temperature": 0.5,
-          "location": "us-central1",
-          "model": "gemini-1.5-pro",
-          "useChatMemory": true,
-          "promptTemplate": "{{input.text}}"
+          "promptTemplate": "{{input.text}}",
+          "timeout": 20,
+          "outputParameterName": "text"
         }
       }
     ],
     "edges": [
       {
-        "id": "ed0e4a37-9be0-4fa9-9893-94af13368522",
+        "id": "6e74f98b-5dc6-4acf-a688-757e08b5266f",
         "source": "whiteModestSkunk",
-        "target": "brownFox"
+        "target": "aquaAttractiveCarp"
       }
     ]
   },
   "description_i18n": {
-    "en_US": "AI Tasks for creating blog entries with images. Relies on VertexAI and OpenAI."
+    "en_US": "AI Tasks for creating blog entries with cover images."
   },
   "enabled": true,
   "externalReferenceCode": "create-blogs-with-images"
