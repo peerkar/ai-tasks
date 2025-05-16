@@ -18,7 +18,7 @@
 - [Disclaimer](#disclaimer)
 
 ## About
-AI Tasks is a tool for Liferay allowing to easily build and manage AI-assisted workflows without extensive programming knowledge. It leverages large language models (LLMs) and an agent-based approach. It can be used standalone, for example for Liferay chatbots and chat interfaces but also integrated to Liferay workflows and to external orchestrators and vice versa. It lets to visually define LLM driven workflows which are then exposed through a REST endpoint. Liferay integration enables governing access, permissions and auditing with the standard Liferay tools as well as easy integration to existing or new Liferay features, to leverage AI.
+AI Tasks is a tool for Liferay allowing to easily build and manage AI-assisted, agentic workflows without extensive programming knowledge. It leverages large language models (LLMs) and an agent-based approach. It can be used standalone, for example for Liferay chatbots and chat interfaces but also integrated to Liferay workflows and to external orchestrators and vice versa. It lets to visually define LLM driven workflows which are then exposed through a REST endpoint. Liferay integration enables governing access, permissions and auditing with the standard Liferay tools as well as easy integration to existing or new Liferay features, to leverage AI.
 
 AI Tasks backend is built on [LangChain4J](https://docs.langchain4j.dev/) and supports the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) for creating standardized integrations to external and internal services. 
 
